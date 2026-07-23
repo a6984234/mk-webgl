@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity Web Player | Mercenary Keepers</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-  </head>
+    <style id="mobile-touch-fix">
+  html, body { margin: 0; height: 100%; overflow: hidden; overscroll-behavior: none; background: #000; }
+  #unity-container, #unity-canvas { touch-action: none; }
+  * { -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none; }
+</style>
+</head>
   <body>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
